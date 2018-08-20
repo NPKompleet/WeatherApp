@@ -1,0 +1,10 @@
+@import 'package:angular_components/css/material/material';
+@import 'package:angular_components/material_icon/mixins';
+
+.custom-size {
+  @include material-icon-size($mat-grid * 5);
+}
+
+material-input {
+  width: 250px;
+}

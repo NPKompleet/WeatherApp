@@ -1,0 +1,29 @@
+.daily{
+    background-color: rgba(200,200,200,0.4);
+    border-radius: 10px;
+    padding: 10px;
+    width: 70px
+}
+
+img{
+    width:20px;
+    padding: 10px 0;
+}
+
+p{
+    padding: 0;
+    margin: 0;
+}
+
+#current{
+    font-size: 20px;
+
+}
+
+#min{
+    font-size: 10px;
+}
+
+#description{
+    font-size: 10px;
+}

@@ -1,0 +1,67 @@
+.background {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(200,200,200,0.2);
+    padding: 2vmin;
+}
+
+.container{
+    position: relative;
+    margin: 0 auto;
+    width: 94%;
+}
+
+#top-div{
+    height: 50px;
+}
+
+.menu_icon{
+    cursor: default;
+}
+
+.menu_icon:hover{
+    background-color: rgba(200,200,200,0.3);
+}
+
+#last-div {
+    margin-top: 30vmin;
+    
+}
+
+.inner{
+    padding: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+}
+
+.hide{
+    display: none;
+}
+
+#mid-top{
+    position: absolute;
+    top: 5px;
+    left:50%;
+}
+
+#right-top{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    margin: 0;
+    padding: 0;
+}
+
+#date{
+    margin:0;
+    padding:0;
+    text-align: center;
+    font-size: 10px;
+}
+
+#country{
+    margin:0;
+    padding:0;
+    text-align: center;
+    font-size: 15px;
+}

@@ -1,0 +1,7 @@
+<div id="switch_background" (click)="toggleTempUnit()">
+    <div id="switch_knob" [class.knobleft]="!knobFloatRight" [class.knobright]="knobFloatRight"></div>
+    <div>
+        <p id="temp_f" [class.purple]="knobFloatRight">°F</p>
+        <p id="temp_c" [class.purple]="!knobFloatRight">°C</p>
+    </div>
+</div>

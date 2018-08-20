@@ -1,0 +1,22 @@
+<div class="background">
+    <div class="container" id="top-div">
+        <material-icon class="menu_icon" [style.color]="menuIconColor" icon="menu" (click)="menuClicked()"></material-icon>
+        <pop-up [hidden]="hideMenu"></pop-up>
+        <div id="mid-top">
+            <p id="date">{{date|date:"EEEE, MMMM"}}</p>
+            <p id="country">{{city}}</p>
+        </div>
+        <my-switch id="right-top"></my-switch>
+    </div>
+    <div class="container" id="mid-div" *ngIf="currentWeatherData != null">
+        <current-weather [currentWeather]="currentWeatherData.weather[0]" [temp]="currentWeatherData.main.temp">
+        </current-weather>
+    </div>
+    <div class="container" id="last-div">
+        <div class="inner" *ngIf="weatherInfoList != null">
+
+            <daily-weather *ngFor="let weatherInfo of weatherInfoList; let i= index" 
+            [weatherInfo]="weatherInfoList[i]" [hidden]="i%8!=0"></daily-weather>
+        </div>
+    </div>
+</div>
